@@ -5,7 +5,7 @@ const port = 3000;
 app.use(express.json());
 
 // decorators
-function readonly(target, bey, descriptor) {
+function readonly(target, key, descriptor) {
   descriptor.writable = false;
   return descriptor;
 }
